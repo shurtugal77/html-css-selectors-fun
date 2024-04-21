@@ -1,0 +1,44 @@
+.parent {
+    border: solid 1px blue;
+    height: 500px;
+    padding: 30px;
+
+    /* -->  1 value all sides same */
+    /* -->  2 values top + bottom, then left and right */
+    /* 3 values top, left + right, botom */
+    /* 4 values top right bottom left */
+}
+
+.block {
+    border:  solid 1px green;
+    height: 100px;
+    margin: 20px 50px;
+    padding: 50px;
+}
+
+.inline-block {
+    display: inline-block;
+    background-color: orange;
+    border: solid 1px red;
+    height: 50px;
+    width: 50px;
+}
+.orange-box {
+    display: inline-block;
+    background-color: orange;
+    border: solid 1px red;
+    height: 50px;
+    width: 50px;
+}
+.blue-box {
+    display: inline-block;
+    background-color: blue;
+    border: solid 1px navy;
+    height: 10px;
+    width: 10px;
+}
+
+.inline {
+    display: inline;
+    background-color: yellow;
+}
