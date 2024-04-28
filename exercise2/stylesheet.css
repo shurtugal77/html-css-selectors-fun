@@ -1,0 +1,28 @@
+div {
+    border: solid 1px green;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+div > p {
+    color: green;
+    size: 20px;
+}
+
+.red-box {
+    border: solid 2px red;
+}
+
+.red-box > p {
+    color: brown;
+    font-weight: bold;
+}
+
+.blue-box {
+    border: solid 2px blue;
+}
+
+.blue-box > p {
+    color: purple;
+    font-weight: bold;
+}
