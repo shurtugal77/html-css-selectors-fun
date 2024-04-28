@@ -1,0 +1,30 @@
+p {
+    color: blue;
+}
+
+.red-font {
+    color: red;
+    font-weight: 1000;
+}
+
+.blue-border {
+    border: solid 1px blue;
+}
+
+#my-id-paragraph {
+    color: darkorange;
+    font-weight: 100;
+    ;
+}
+
+.main {
+    border: solid 3px teal;
+}
+
+.main p {
+    color: purple;
+}
+
+.main div p {
+    color: orange;
+}
