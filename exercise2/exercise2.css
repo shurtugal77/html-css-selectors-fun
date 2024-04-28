@@ -21,10 +21,42 @@ p {
     border: solid 3px teal;
 }
 
-.main p {
+/* .main p {
+    color: purple;
+} */
+
+/* Specific child selector.
+1) Find the element(s) which have the "main" class
+2) Within that, select only immediate children that are p tags */
+
+.main > p {
     color: purple;
 }
 
-.main div p {
+.main > div > p {
     color: orange;
 }
+
+/* .main div p {
+    color: orange;
+} */
+
+/* 1) Find any elements with the class "child-div"
+2) For these elements, see if there is a sibling/adjacent element also called "child-div"
+3) For that selected element, find the p tags */
+
+.child-div ~ .child-div > P {
+    color: green;
+}
+
+/* :nth-of-type
+This is a pseudo-class selector where we can define which element tp select
+based on its numerical position on the HTML structure */
+.child-div + .child-div ~ .child-div > p:nth-of-type(3) {
+    color: yellow;
+}
+
+/* alternierende Auswahl */
+/* .child-div:nth-of-type(3) > p:nth-of-type(2n) {
+    color: yellow
+} */
