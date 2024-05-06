@@ -19,20 +19,20 @@ h1,h2,h3,h4 {
     font-size: 28px;
 }
 
-.container-one > p,.container-two > p{
+div > p {
     margin-left: 10px;
+    border-bottom: solid 1px black;
 }
 
-.container-one > p {
+div:nth-of-type(1) > p {
     color: blue;
     font-size: 12px;
     border-bottom: solid 2px black;
 }
 
-.container-two > p {
+div:nth-of-type(2) > p {
     color: purple;
     font-size: 15px;
-    border-bottom: solid 1px black;
 }
 
 .container-two > span + p > span {
@@ -40,15 +40,14 @@ h1,h2,h3,h4 {
     font-size: 12px;
 }
 
-.container-one.container-two > p{
+div:nth-of-type(3) > p {
     color: purple;
     font-size: 10px;
     text-transform: uppercase;
     font-weight: bold;
 }
 
-.container-one.container-two ~ .container-one.container-two > p {
-    all: unset;
+section:nth-of-type(1) > p {
     color: orange;
     font-size: 28px;
 }
