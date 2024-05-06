@@ -47,6 +47,7 @@ p {
 
 .child-div ~ .child-div > P {
     color: green;
+    /* border: solid 3px black; */
 }
 
 /* :nth-of-type
@@ -54,6 +55,7 @@ This is a pseudo-class selector where we can define which element tp select
 based on its numerical position on the HTML structure */
 .child-div + .child-div ~ .child-div > p:nth-of-type(3) {
     color: yellow;
+    /* border: solid 3px blue */
 }
 
 /* alternierende Auswahl */
