@@ -42,3 +42,7 @@
     display: inline;
     background-color: yellow;
 }
+
+span {
+    font-size: 15px;
+}
