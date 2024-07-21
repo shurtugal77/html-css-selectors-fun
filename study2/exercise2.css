@@ -45,6 +45,10 @@ p {
 2) For these elements, see if there is a sibling/adjacent element also called "child-div"
 3) For that selected element, find the p tags */
 
+.child-div ~ .child-div {
+    border: solid 3px red;
+}
+
 .child-div ~ .child-div > P {
     color: green;
     /* border: solid 3px black; */

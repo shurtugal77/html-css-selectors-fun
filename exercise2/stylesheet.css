@@ -1,4 +1,4 @@
-div {
+/* div {
     border: solid 1px green;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -25,4 +25,41 @@ div > p {
 .blue-box > p {
     color: purple;
     font-weight: bold;
+} */
+
+div  {
+    border: solid 1px green;
+    margin: 5px 0px;
+}
+
+div > p {
+    color: green;
+    size: 20px;
+}
+
+/* I could use multiple selectors in one go - makes it harder to read though.
+Usecase would be better if I could edit the html and manually add more classes and have a generic "box" class  */
+.red-box, .blue-box {
+    background-color: grey;
+    border-radius: 5px;
+    border: 2px solid red;
+}
+
+.red-box {
+    border: solid 2px red;
+    border-radius: 10px;
+}
+
+.blue-box {
+    border: solid 2px blue;
+}
+
+.red-box > p {
+    font-weight: bold;
+    color: brown;
+}
+
+.blue-box > p {
+    font-weight: bold;
+    color: purple;
 }
