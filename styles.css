@@ -1,4 +1,4 @@
-body > p {
+/* body > p {
     font-size: 28px;
     color: orange;
 }
@@ -50,4 +50,61 @@ div:nth-of-type(3) > p {
 section:nth-of-type(1) > p {
     color: orange;
     font-size: 28px;
+} */
+
+/* Neue Lösung */
+
+p {
+    color: orange;
+    font-size: 28px;
+}
+
+.paragraph {
+    color: green;
+}
+
+#paragraph {
+    color: red;
+}
+
+h1, h2, h3, h4 {
+    color: pink;
+}
+
+div {
+    color: black;
+    font-size: 28px;
+}
+
+div > p {
+    color: blue;
+    font-size: 12px;
+    margin-left: 10px;
+    border-bottom: solid 2px black;
+}
+
+div + div > p {
+    color: purple;
+    font-size: 15px;
+    margin-left: 10px;
+    border-bottom: solid 1px black;
+}
+
+.container-two > span + p > span {
+    color: grey;
+    font-size: 12px;
+}
+
+div + div + div > p {
+    color: purple;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 10px;
+    border-bottom: solid 1px black;
+}
+
+section > p {
+    color: orange;
+    font-size: 28px
 }
